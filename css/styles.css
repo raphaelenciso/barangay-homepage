@@ -386,7 +386,7 @@ hr.hr-heading {
 /**********************/
 .navbar {
   background-color: #262431;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 0.875rem;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
 }
@@ -403,8 +403,8 @@ hr.hr-heading {
 
 .navbar .logo-text {
   color: #f1f1f8;
-  font-weight: 700;
-  font-size: 1.875rem;
+  font-weight: 800;
+  font-size: 2rem;
   line-height: 1rem;
   text-decoration: none;
 }
@@ -502,7 +502,7 @@ hr.hr-heading {
 .navbar .fa-stack {
   width: 2em;
   margin-right: 0.25rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .navbar .fa-stack-2x {
@@ -1605,8 +1605,8 @@ hr.hr-heading {
   }
 
   .navbar .nav-item .nav-link {
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
   }
 
   .navbar .dropdown-menu {
