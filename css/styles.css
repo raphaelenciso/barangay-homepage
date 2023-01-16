@@ -176,9 +176,9 @@ hr.hr-heading {
 .btn-solid-lg {
   display: inline-block;
   padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-  border: 1px solid #0d89c7;
+  border: 1px solid #dc715c;
   border-radius: 32px;
-  background-color: #0d89c7;
+  background-color: #dc715c;
   color: #ffffff;
   font-weight: 600;
   font-size: 0.875rem;
@@ -189,7 +189,7 @@ hr.hr-heading {
 
 .btn-solid-lg:hover {
   background-color: transparent;
-  color: #0d89c7; /* needs to stay here because of the color property of a tag */
+  color: #dc715c; /* needs to stay here because of the color property of a tag */
   text-decoration: none;
 }
 
