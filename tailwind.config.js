@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         "hero-bg": "url('/Login_Desktop_BG.png')",
       },
+      colors: {
+        "dark-blue": "#13163F",
+      },
     },
   },
   plugins: [],
