@@ -1,6 +1,6 @@
 function App() {
   return (
-    // Hero Section
+    // Hero Sections
     <div className="w-screen h-screen bg-hero-bg bg-cover text-white p-6">
       {/* Navbar */}
       <div className="mx-auto max-w-6xl bg-[#13163F] px-8 py-2 flex justify-between items-center rounded-xl">
