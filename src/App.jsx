@@ -2,6 +2,7 @@ import useThemeStore from "./store/themeStore";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Feature from "./components/Feature";
+import Footer from "./components/Footer";
 
 function App() {
   const theme = useThemeStore((state) => state.theme);
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Feature />
+      <Footer />
     </div>
   );
 }
