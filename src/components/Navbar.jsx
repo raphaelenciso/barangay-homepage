@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full fixed md:top-4 z-10 text-white ">
-      <div className="flex justify-between items-center rounded-lg  bg-dark-blue bg-opacity-85 max-w-6xl mx-auto px-8 py-4 md:py-2 ">
+      <div className="flex justify-between items-center rounded-lg  bg-dark-blue bg-opacity-85 max-w-6xl mx-auto px-5 lg:px-8 py-4 md:py-2 ">
         <Link to="/" className="flex items-center">
           <img alt="brgy" src="./logo.png" className="h-10 w-10 mr-3" />
           <h2 className="md:hidden lg:block text-2xl font-semibold">
@@ -23,13 +23,25 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li className="cursor-pointer">
-            <a href="https://forms.barangay564.online/">Request</a>
+            <a
+              href="https://forms.barangay564.online/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Request
+            </a>
           </li>
           <li className="cursor-pointer">
-            <a href="https://forms.barangay564.online/tracker">Track</a>
+            <a
+              href="https://forms.barangay564.online/tracker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Track
+            </a>
           </li>
           <li className="cursor-pointer">
-            <a>Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -48,24 +60,51 @@ const Navbar = () => {
           </button>
         )}
 
-        <div className="block md:hidden relative">
+        <div className="flex md:hidden relative flex-row gap-4">
+          {theme === "dark" && (
+            <button onClick={toggleTheme}>
+              <BsSun size={30} className="block cursor-pointer   " />
+            </button>
+          )}
+
+          {theme === "" && (
+            <button onClick={toggleTheme} className="">
+              <BsMoonStars
+                size={30}
+                className="block cursor-pointer icon    "
+              />
+            </button>
+          )}
           <RxHamburgerMenu
             size={30}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           />
           {isMenuOpen && (
-            <ul className="flex flex-col py-6 px-8 rounded-lg gap-4 text-lg  bg-dark-blue absolute top-10 right-[-20px]  ">
+            <ul className="flex flex-col py-6 px-8 rounded-lg gap-4 text-lg  bg-dark-blue absolute top-10 right-[-15px]  ">
               <Link to="/">Home</Link>
 
               <li className="cursor-pointer">
-                <a href="https://forms.barangay564.online/">Request</a>
+                <a
+                  href="https://forms.barangay564.online/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Request
+                </a>
               </li>
               <li className="cursor-pointer">
-                <a href="https://forms.barangay564.online/tracker">Track</a>
+                <a
+                  href="https://forms.barangay564.online/tracker"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Track
+                </a>
               </li>
               <li className="cursor-pointer">
-                <a>Contact</a>
+                <a href="#contact">Contact</a>
               </li>
+              <li></li>
             </ul>
           )}
         </div>

@@ -1,6 +1,9 @@
 import { BsArrowRightShort } from "react-icons/bs";
+import useThemeStore from "../store/themeStore";
 
 const Hero = () => {
+  const theme = useThemeStore((state) => state.theme);
+
   return (
     <section className="bg-hero-bg bg-cover text-white ">
       <div className="bg-gradient-to-r from-[#1111113f] dark:from-[#1111116f] via-transparent to-transparent   ">
@@ -39,7 +42,11 @@ const Hero = () => {
 
             <img
               alt="phone"
-              src="/Dark_Homepage.png"
+              src={
+                theme === "dark"
+                  ? "./Dark_Homepage.png"
+                  : "./Light_Homepage.png"
+              }
               className="h-[20rem] xs:h-[28rem] md:h-[30rem] 2xl:h-[35rem] my-8 md:mt-0  "
             />
           </div>
