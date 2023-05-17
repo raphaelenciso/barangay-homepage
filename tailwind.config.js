@@ -9,6 +9,8 @@ export default {
       },
       colors: {
         "dark-blue": "#13163F",
+        "primary-blue": "#033aa9",
+        "primary-blue-outline": "#033baa90",
       },
       screens: {
         xs: "450px",

@@ -1,5 +1,6 @@
 import { BsArrowRightShort } from "react-icons/bs";
 import useThemeStore from "../store/themeStore";
+import AnimatedButton from "./AnimatedButton";
 
 const Hero = () => {
   const theme = useThemeStore((state) => state.theme);
@@ -27,8 +28,8 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="bg-white text-[#033AA9] dark:bg-[#033AA9] dark:text-white py-2 w-60 rounded-xl mt-4 md:mt-12 cursor-pointer shadow-sm shadow-blue-400 mx-auto md:mx-0">
-                <span className=" font-semibold text-lg">
+              <div className="mt-4 md:mt-12 mx-auto md:mx-0">
+                {/* <span className=" font-semibold text-lg">
                   <a
                     href="https://forms.barangay564.online/"
                     className="flex flex-row items-center justify-center gap-6 "
@@ -36,7 +37,11 @@ const Hero = () => {
                     <p className=""> Request Now </p>
                     <BsArrowRightShort size={30} />
                   </a>
-                </span>
+                </span> */}
+                <AnimatedButton
+                  title="Request Now"
+                  href="https://forms.barangay564.online/"
+                />
               </div>
             </div>
 
