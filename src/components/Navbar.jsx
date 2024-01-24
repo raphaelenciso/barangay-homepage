@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
           <li className="cursor-pointer">
             <a
-              href="https://forms.barangay564.online/"
+              href="https://barangay-forms.up.railway.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -33,7 +33,7 @@ const Navbar = () => {
           </li>
           <li className="cursor-pointer">
             <a
-              href="https://forms.barangay564.online/tracker"
+              href="https://barangay-forms.up.railway.app/tracker"
               target="_blank"
               rel="noreferrer"
             >
@@ -85,7 +85,7 @@ const Navbar = () => {
 
               <li className="cursor-pointer">
                 <a
-                  href="https://forms.barangay564.online/"
+                  href="https://barangay-forms.up.railway.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -94,7 +94,7 @@ const Navbar = () => {
               </li>
               <li className="cursor-pointer">
                 <a
-                  href="https://forms.barangay564.online/tracker"
+                  href="https://barangay-forms.up.railway.app/tracker"
                   target="_blank"
                   rel="noreferrer"
                 >
