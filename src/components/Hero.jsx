@@ -31,7 +31,7 @@ const Hero = () => {
               <div className="mt-4 md:mt-12 mx-auto md:mx-0">
                 {/* <span className=" font-semibold text-lg">
                   <a
-                    href="https://forms.barangay564.online/"
+                    href="https://barangay-forms.up.railway.app/"
                     className="flex flex-row items-center justify-center gap-6 "
                   >
                     <p className=""> Request Now </p>
@@ -40,7 +40,7 @@ const Hero = () => {
                 </span> */}
                 <AnimatedButton
                   title="Request Now"
-                  href="https://forms.barangay564.online/"
+                  href="https://barangay-forms.up.railway.app/"
                 />
               </div>
             </div>
